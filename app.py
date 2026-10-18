@@ -141,7 +141,7 @@ def main():
         config = read_configuration(ROOT)
         renderer = PassRenderer()
     except Exception as error:
-        messagebox.showerror('Manual Configuration Required', str(error), parent=window)
+        messagebox.showerror('Configuration Error', str(error), parent=window)
         window.destroy()
         return 1
     Application(window, config, renderer)
