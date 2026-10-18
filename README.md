@@ -8,6 +8,8 @@ This public repository contains source and blank configuration only. It does not
 
 Before following the manual setup guide, obtain an authorized, matching calibrated asset bundle separately. Place its `manifest.json` and all files listed in that manifest under `assets/`. Place its three reference PNGs under `examples/`. This source release does not include an asset builder or download assets automatically. Arbitrary replacement images will not reproduce the validated layout.
 
+Also copy the original `docs/pixel-validation.json` from the same private bundle, preserving its exact bytes. The public JSON report is an informational copy: web editing, line-ending conversion, or an added final newline can change its SHA-256 even when the JSON values are identical. The local verifier requires the original report bytes associated with the private manifest. Do not bypass that check by editing the manifest.
+
 See [Private asset requirements](docs/PRIVATE_ASSETS.md). Keep those assets and generated files out of this public repository.
 
 ## Start here
