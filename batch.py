@@ -26,7 +26,7 @@ def generate_batch(renderer: PassRenderer, color, current_serial, count, output_
         raise ValueError('Color must be red, green, or blue.')
     root = Path(output_root)
     if not root.is_dir():
-        raise ValueError('Create the configured output directory manually first.')
+        raise ValueError('The configured output directory does not exist. Create it before generating images.')
     stamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     directory = root / f'{color}_{current_serial + 1:08d}-{current_serial + count:08d}_{stamp}_{uuid.uuid4().hex[:6]}'
     directory.mkdir()
