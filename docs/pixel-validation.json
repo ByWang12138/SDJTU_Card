@@ -1,0 +1,394 @@
+{
+  "reference_export_size": [
+    3600,
+    2700
+  ],
+  "cases": [
+    {
+      "color": "green",
+      "serial": "20220153",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "87654321",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "12345678",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "10000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "11111111",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "88888888",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "99999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "90909090",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "11223344",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020311",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "100000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "999999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "1000000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "9999999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "1212121212",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "7777777777",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "1010101010",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "20220153",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "87654321",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "12345678",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "10000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "11111111",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "88888888",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "99999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "90909090",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "11223344",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "2022020311",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "100000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "999999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "1000000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "9999999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "1212121212",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "7777777777",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "red",
+      "serial": "1010101010",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "20220153",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "87654321",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "12345678",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "10000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "11111111",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "88888888",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "99999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "90909090",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "11223344",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "2022020311",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "100000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "999999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "1000000000",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "9999999999",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "1212121212",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "7777777777",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "blue",
+      "serial": "1010101010",
+      "different_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020311",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020312",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020313",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020314",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020315",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020316",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020317",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020318",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020319",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "green",
+      "serial": "2022020320",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "red",
+      "serial": "20240157",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    },
+    {
+      "color": "blue",
+      "serial": "20230103",
+      "independent_legacy_export": true,
+      "different_pixels": 0
+    }
+  ],
+  "case_count": 63,
+  "zero_difference_cases": 63,
+  "total_different_pixels": 0,
+  "seconds": 13.58,
+  "calibration_text_exports": 2658,
+  "all_context_variants_consistent": true,
+  "numeric_kerning_pairs_measured": 300,
+  "no_external_process_runtime_test": "passed"
+}
