@@ -1,61 +1,46 @@
-# Campus Pass Image Generator - Manual Setup Source Edition
+# Campus Pass Image Generator
 
-Generate red, green, and blue campus pass PNG images without PowerPoint or WPS. This distribution intentionally requires the operator to prepare a local Markdown installation record before it can start.
+Generate red, green, and blue campus pass PNG images without PowerPoint or WPS.
 
-## Source distribution and required private assets
+## Source distribution
 
-This public repository contains source and blank configuration only. It does not contain institutional artwork, calibrated digit atlases, QR sampling assets, generated example images, or a completed local installation record. A fresh clone cannot generate passes.
+This repository contains application source and a blank configuration record. Institutional artwork, calibrated digit atlases, QR sampling assets, reference PNGs, and completed local settings are supplied separately.
 
-Before following the manual setup guide, obtain an authorized, matching calibrated asset bundle separately. Place its `manifest.json` and all files listed in that manifest under `assets/`. Place its three reference PNGs under `examples/`. This source release does not include an asset builder or download assets automatically. Arbitrary replacement images will not reproduce the validated layout.
+Place a matching authorized asset bundle under `assets/` and its three reference PNGs under `examples/`. Also restore the original `docs/pixel-validation.json` from that bundle with its exact bytes. The public JSON report is an informational copy; line endings or an added final newline can change its SHA-256. The runtime checks the original report against the bundle manifest.
 
-Also copy the original `docs/pixel-validation.json` from the same private bundle, preserving its exact bytes. The public JSON report is an informational copy: web editing, line-ending conversion, or an added final newline can change its SHA-256 even when the JSON values are identical. The local verifier requires the original report bytes associated with the private manifest. Do not bypass that check by editing the manifest.
+See [Asset requirements](docs/PRIVATE_ASSETS.md) for the local directory layout. A fresh clone needs these files and environment settings before generation is available.
 
-See [Private asset requirements](docs/PRIVATE_ASSETS.md). Keep those assets and generated files out of this public repository.
+## Getting started
 
-## Start here
+See [Installation and configuration](SETUP.md). Application settings are stored in `config/INSTALLATION.local.md`; copy [the example record](config/INSTALLATION.example.md) and enter the settings for the local installation.
 
-Read [MANUAL_SETUP.md](MANUAL_SETUP.md) from beginning to end. Copy [config/INSTALLATION.example.md](config/INSTALLATION.example.md) to `config/INSTALLATION.local.md`, complete the 24 fields, and perform the four review items yourself.
+## Requirements
 
-There is no completed record in this package. It does not accept the previous `config/local.json`, automatically detect Python, install dependencies, generate configuration, or provide a setup wizard. A fresh download is expected to refuse startup until the operator finishes setup.
+- Python 3.11 or later with Tk support.
+- The dependency versions listed in `requirements.txt`.
+- A matching calibrated asset bundle and validation report.
+- An existing output directory and the last-used serial for each color.
 
-## Manual prerequisites
+The record includes runtime paths, dependency versions, file checksums, output dimensions, and serial settings. Paths must be absolute. Update environment-specific values when moving the installation or changing Python.
 
-- Python 3.11 or later, with Tk support, installed by the operator.
-- Exact versions from `requirements.txt`, installed into the selected interpreter manually.
-- A permanent installation location and a separately created output directory.
-- An inventory of interpreter path, version, executable hash, and installed library versions.
-- Manually reviewed asset hashes, the validation report, and all three output dimensions.
-- The last-used serial for each color, entered from the operator's own records.
-
-All paths in the local Markdown record must be absolute. Moving the installation requires reviewing and updating the record. Run `Launch.cmd` only after completing the setup guide.
-
-## Generation features
+## Features
 
 - Red, green, and blue styles.
 - Matching `JT-` serials and `109-JT-` QR payloads.
-- Sequential batches of 1 to 999 images.
-- Eight-digit minimum padding and support for serials up to ten digits.
-- Cropped PNG images and a ZIP containing only those images.
-- An English desktop interface; no web server, HTTP generation API, or command-line generation switch.
+- Sequential batches of 1 to 999 images, with eight-digit minimum padding and support for up to ten digits.
+- Cropped PNG images and a ZIP archive.
+- An English desktop interface launched with `Launch.cmd`.
 
-The calibrated renderer, artwork, numeral pixels, spacing of adjacent `11` digits, QR sampling, and output sizes are unchanged. [Validation](docs/VALIDATION.md) records 63 exact native-reference comparisons with zero different pixels at the fixed reference resolution. Routine generation uses bitmap assets only and does not require Office, fonts, or an external rendering process.
-
-## Manual-use preference and its limits
-
-The author asks operators to complete installation, configuration, and final checks personally rather than delegating unattended setup to an AI tool. **These checks cannot prove human-only setup or reliably prevent AI assistance.** Public source code can be read and modified, and configuration can be understood by people or AI. The Markdown checklist is a declaration, not an AI detector or access-control mechanism.
-
-## Distribution
-
-This public source distribution excludes the owner's calibrated artwork, generated example images, and completed local records. Keep your private asset bundle and serial history local. No license has been added.
-
-The completed `config/INSTALLATION.local.md` is private and ignored by Git. The configuration example contains no usable local paths, hashes, or serial defaults.
+The renderer uses calibrated bitmap assets to preserve the reference image layout. [Validation](docs/VALIDATION.md) records 63 native-reference comparisons with zero different pixels for the supplied asset set. See the validation document for the supported resolution and comparison scope.
 
 ## Development checks
 
-After manually installing the dependencies, renderer tests can be run with:
+With dependencies and the matching local asset bundle available:
 
 ```powershell
 python -B -m unittest discover -s tests -p "test_*.py"
 ```
 
-These tests validate the renderer and use temporary output directories. They do not generate an installation record or configure the application.
+## Local files
+
+Completed configuration, private assets, and generated output are excluded by `.gitignore`. Keep local paths and serial history out of public commits. No license has been added.
