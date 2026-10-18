@@ -1,0 +1,10 @@
+config/INSTALLATION.local.md
+config/local.json
+output/
+assets/
+examples/
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+*.zip
