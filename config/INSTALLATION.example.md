@@ -1,6 +1,6 @@
 # Local Installation Record
 
-Copy this file to INSTALLATION.local.md. Complete every REQUIRED value yourself.
+Copy this file to INSTALLATION.local.md. Replace every REQUIRED value with the corresponding local setting.
 Keep the field names, bullet syntax, backticks, and review wording unchanged.
 Do not place this record inside a code fence. Do not publish the completed file.
 
@@ -43,11 +43,11 @@ Do not place this record inside a code fence. Do not publish the completed file.
 - `green_last_serial`: `REQUIRED`
 - `blue_last_serial`: `REQUIRED`
 
-## 6. Operator Review
+## 6. Installation Checks
 
-Mark each item [x] only after completing the corresponding review yourself.
+Mark each item [x] when the corresponding installation check is complete.
 
-- [ ] I reviewed MANUAL_SETUP.md from beginning to end.
-- [ ] I opened all three example images and checked their dimensions.
-- [ ] I checked the QR payload rule and the last serial for each color.
-- [ ] I understand that these checks cannot prove human-only setup.
+- [ ] The runtime paths and dependency versions match this installation.
+- [ ] The example images match the recorded output dimensions.
+- [ ] The QR payload format and last-used serials have been checked.
+- [ ] The output directory and asset checksums match the local files.
